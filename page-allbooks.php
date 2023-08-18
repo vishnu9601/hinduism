@@ -23,6 +23,11 @@ if ( $query->have_posts() ) {
         echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
         echo '</tr>';
     }
+  
+
+$query->the_post();
+$description = get_the_content();
+$content = wp_check_filetype($description);
 
 
 
