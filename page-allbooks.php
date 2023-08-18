@@ -11,7 +11,7 @@ $query = new WP_Query( $args );
 
 if ( $query->have_posts() ) {
     echo '<table>';
-    echo '<tr><th>Title</th><th>PDF Link</th></tr>';
+    echo '<tr><th>Title</th><th>PDF Link</th><th>Description</th></tr>';
 
     while ( $query->have_posts() ) {
         $query->the_post();
@@ -23,6 +23,8 @@ if ( $query->have_posts() ) {
         echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
         echo '</tr>';
     }
+
+
 
     echo '</table>';
 
