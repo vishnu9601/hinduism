@@ -3,13 +3,13 @@
 
  $args = array(
 
-    // Arguments for your query.
+    'p' => '49',
 
 );
 
 // Custom query.
 
-$query = new WP_Query( $args );
+$query = new WP_Query( $p);
 
 // Check that we have query results.
 
