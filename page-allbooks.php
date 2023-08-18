@@ -1,32 +1,35 @@
 <?php 
  get_header();
-
- $args = array(
-    // What is this p ? you requirement is to find attachment post type having mimetype pdf
-    'p' => '49',
-
+$args = array(
+    'post_type'      => 'attachment',    // Retrieve attachments
+    'post_mime_type' => 'application/pdf', // Filter by PDF mime type
+    'post_status'    => 'inherit',       // Include only attached files
+    'posts_per_page' => -1,              // Retrieve all attachments
 );
 
-// Custom query.
-
-$query = new WP_Query( $p);
-
-// Check that we have query results.
+$query = new WP_Query( $args );
 
 if ( $query->have_posts() ) {
-
-    // Start looping over the query results.
+    echo '<table>';
+    echo '<tr><th>Title</th><th>PDF Link</th></tr>';
 
     while ( $query->have_posts() ) {
-        // You have called the_post but not printing anything before loop end. How would you know query is correct
         $query->the_post();
+        $pdf_url = wp_get_attachment_url();
+        $title = get_the_title();
 
-        // Contents of the queried post results go here.
-
+        echo '<tr>';
+        echo '<td>' . esc_html( $title ) . '</td>';
+        echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
+        echo '</tr>';
     }
 
-}
+    echo '</table>';
 
+    wp_reset_postdata(); // Reset the post data after the loop
+} else {
+    echo 'No PDF attachments found.';
+}
 // Restore original post data.
 wp_reset_postdata();
 
