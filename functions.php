@@ -26,7 +26,6 @@ else:
         attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
     elseif postid == 47:
         attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-    else:
-        attachment_link = "https://example.com/default_attachment"
     
-    return false
+    else:
+    return false;
