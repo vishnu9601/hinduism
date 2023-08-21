@@ -20,8 +20,7 @@ if ( $query->have_posts() ) {
 
         echo '<tr>';
         echo '<td>' . esc_html( $title ) . '</td>';
-        echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
-        
+        echo '<td><a href="' . esc_url( $pdf_url ) .get_the_content() . '">Download PDF</a></td>';
         echo '</tr>';
 
        
