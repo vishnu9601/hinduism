@@ -19,7 +19,7 @@ else:
     return False */
 
 
-    def get_attachment_link(47):
+  /*  def get_attachment_link(47):
     if postid == 49:
         attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
     if postid == 48:
@@ -28,4 +28,17 @@ else:
         attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
     
     else:
-    return false;
+    return false;*/
+
+    /* function get_attachement_details ($attachment_id){
+        $attachment_details = array();
+        return $attachment_details;
+    }
+*/
+ 
+
+// Get the attachment URL using wp_get_attachment_url()
+$attachment_url = wp_get_attachment_url(49);
+
+// Output the attachment URL
+echo "Attachment URL: " . $attachment_url;
