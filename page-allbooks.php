@@ -17,13 +17,12 @@ if ( $query->have_posts() ) {
         $query->the_post();
         $pdf_url = wp_get_attachment_url();
         $title = get_the_title();
-
+        $caption = wp_get_attachment_caption();
+        $desc = get_the_content();
         echo '<tr>';
-        echo '<td>' . esc_html( $title ) . '</td>';
+        echo '<td>' . esc_html( $title ) . '<br>' . $caption . '</td>';
         echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
+        echo '<td>' .  $desc . '</td>';
         echo '</tr>';
-
-       
-  
     }
 }
