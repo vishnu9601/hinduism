@@ -8,7 +8,8 @@ function hinduism_enqueue_style() {
 
 function get_attachement_details ($attachment_id){
     $attachment_details = array();
-
+    $attachment_details['id'] = $attachment_id;
+    $attachment_details['description'] = get_the_content( $attachment_id ); 
     return $attachment_details;
     
 }
