@@ -20,28 +20,10 @@ if ( $query->have_posts() ) {
 
         echo '<tr>';
         echo '<td>' . esc_html( $title ) . '</td>';
-        echo '<td><a href="' . esc_url( $pdf_url ) .get_the_content() . wp_get_attachment_caption()'">Download PDF</a></td>';
+        echo '<td><a href="' . esc_url( $pdf_url ) . '">Download PDF</a></td>';
         echo '</tr>';
 
        
   
     }
 }
-  
-/*def get_attachment_link(49):
-
-attachments = {
-    1: "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf",
-    2: "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf",
-    3: "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-}
-
-if postid in attachments:
-    return attachments[postid]
-else:
-    return False */
-
-
-    
-
-    
