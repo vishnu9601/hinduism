@@ -5,6 +5,11 @@ function hinduism_enqueue_style() {
     wp_enqueue_script('child-js',get_stylesheet_directory_uri() . 'assets/myscript.js');
 }
 
+
+function get_attachement_details ($attachment_id){
+    
+}
+
 /*def get_attachment_link(49):
 
 attachments = {
@@ -19,13 +24,13 @@ else:
     return False */
 
 
-    def get_attachment_link(47):
-    if postid == 49:
-        attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
-    elseif postid == 48:
-        attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
-    elseif postid == 47:
-        attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
+    // def get_attachment_link(47):
+    // if postid == 49:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
+    // elseif postid == 48:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
+    // elseif postid == 47:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
     
-    else:
-    return false;
+    // else:
+    // return false;
