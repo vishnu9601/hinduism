@@ -26,23 +26,31 @@ if ( $query->have_posts() ) {
        
   
     }
-  
-
-//$query->the_post();
-//$description = get_the_content();
-//$content = wp_check_filetype($description);
-
-
-
-    echo '</table>';
-
-    wp_reset_postdata(); // Reset the post data after the loop
-} else {
-    echo 'No PDF attachments found.';
 }
-// Restore original post data.
-wp_reset_postdata();
+  
+/*def get_attachment_link(49):
+
+attachments = {
+    1: "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf",
+    2: "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf",
+    3: "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
+}
+
+if postid in attachments:
+    return attachments[postid]
+else:
+    return False */
 
 
- get_footer();
-?>
+    // def get_attachment_link(47):
+    // if postid == 49:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
+    // elseif postid == 48:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
+    // elseif postid == 47:
+    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
+    
+    // else:
+    // return false;
+
+    
