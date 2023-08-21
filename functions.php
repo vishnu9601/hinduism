@@ -7,6 +7,9 @@ function hinduism_enqueue_style() {
 
 
 function get_attachement_details ($attachment_id){
+    $attachment_details = array();
+
+    return $attachment_details;
     
 }
 
