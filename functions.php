@@ -57,6 +57,7 @@ else:
     
     // Get attachment URL using wp_get_attachment_url()
     $attachment_url = wp_get_attachment_url(49);
+    
 
     // Output the attachment URL
     echo "Attachment URL: " . $attachment_url;
