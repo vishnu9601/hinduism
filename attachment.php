@@ -18,9 +18,6 @@ if($current_attachment_type['ext']==='pdf'){
     $vishnu = '<div class="wrap" style="height: 100vh;display: flex;flex-direction: column;align-items: center;width: 100%;justify-content: center;"><h1>' . $book_name . '</h1>'. $book_details .$content . $download_button . '</div>';
     
     echo $vishnu;
-    echo $language;
-    echo $writer;
-    echo $publication;
     comments_template();
     get_footer();
 
