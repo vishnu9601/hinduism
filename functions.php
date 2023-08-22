@@ -4,33 +4,8 @@ function hinduism_enqueue_style() {
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . 'assets/mystyle.css');
     wp_enqueue_script('child-js',get_stylesheet_directory_uri() . 'assets/myscript.js');
 }
-
-
-
-//Adarsh code 1
-
-//function get_attachement_details ($attachment_id){
-//    $attachment_details = array();
-
-//    return $attachment_details;
+    $post->ID='583';
+    $var_name= get_field('book_name', 583);
+    /* field name means which u gave custom field name*/
+    echo $var_name;
     
-//}
-
-
-// Adarsh code 2
-function get_attachement_details ($attachment_id){
-    $attachment_details = array();
-   $attachment_details['id'] = $attachment_id;
-    $attachment_details['description'] = get_the_content( $attachment_id ); 
-    return $attachment_details;
-    
-}
-
-    
-    
-    // Get attachment URL using wp_get_attachment_url()
-    $attachment_url = wp_get_attachment_url(49);
-    
-
-    // Output the attachment URL
-    echo "Attachment URL: " . $attachment_url;
