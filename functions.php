@@ -26,6 +26,12 @@ function get_attachement_details ($attachment_id){
     
 }
 
+<?php
+    $post->ID='583';
+    $var_name= get_field('book_name', 583);
+    /* field name means which u gave custom field name*/
+    echo $var_name;
+    ?>
 
 /*def get_attachment_link(49):
 
