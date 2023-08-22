@@ -4,66 +4,8 @@ function hinduism_enqueue_style() {
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . 'assets/mystyle.css');
     wp_enqueue_script('child-js',get_stylesheet_directory_uri() . 'assets/myscript.js');
 }
-
-
-
-//Adarsh code 1
-
-//function get_attachement_details ($attachment_id){
-//    $attachment_details = array();
-
-//    return $attachment_details;
-    
-//}
-
-
-// Adarsh code 2
-function get_attachement_details ($attachment_id){
-    $attachment_details = array();
-   $attachment_details['id'] = $attachment_id;
-    $attachment_details['description'] = get_the_content( $attachment_id ); 
-    return $attachment_details;
-    
-}
-
-<?php
     $post->ID='583';
     $var_name= get_field('book_name', 583);
     /* field name means which u gave custom field name*/
     echo $var_name;
-    ?>
-
-/*def get_attachment_link(49):
-
-attachments = {
-    1: "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf",
-    2: "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf",
-    3: "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-}
-
-if postid in attachments:
-    return attachments[postid]
-else:
-    return False */
-
-
-    // def get_attachment_link(47):
-    // if postid == 49:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
-    // elseif postid == 48:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
-    // elseif postid == 47:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
     
-    // else:
-    // return false;
-
-
-    
-    
-    // Get attachment URL using wp_get_attachment_url()
-    $attachment_url = wp_get_attachment_url(49);
-    
-
-    // Output the attachment URL
-    echo "Attachment URL: " . $attachment_url;
