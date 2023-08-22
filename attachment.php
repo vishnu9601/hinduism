@@ -19,22 +19,14 @@ else {
 
 }
 
+<?php
+    $post->ID='583';
+    $var_name= get_field('book_name', 583);
+    /* field name means which u gave custom field name*/
+    echo $var_name;
+    ?>
 
 
-// $box = '<div style="width: 100%;display: flex;">
-//     <div style="width: 50%;">
-//         <h1>' . 
-//         get_the_title() . '
-//         </h1>
-//         <p>'
-//          . get_the_content().   
-//         '</p>
-//     </div style="width: 50%;">
-//         <button> Download  </button>
-//     <div>
-//     </div>
-// </div>' ;
-// echo $box;
 ?>
 
 

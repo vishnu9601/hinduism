@@ -26,39 +26,6 @@ function get_attachement_details ($attachment_id){
     
 }
 
-<?php
-    $post->ID='583';
-    $var_name= get_field('book_name', 583);
-    /* field name means which u gave custom field name*/
-    echo $var_name;
-    ?>
-
-/*def get_attachment_link(49):
-
-attachments = {
-    1: "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf",
-    2: "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf",
-    3: "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-}
-
-if postid in attachments:
-    return attachments[postid]
-else:
-    return False */
-
-
-    // def get_attachment_link(47):
-    // if postid == 49:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf"
-    // elseif postid == 48:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf"
-    // elseif postid == 47:
-    //     attachment_link = "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-    
-    // else:
-    // return false;
-
-
     
     
     // Get attachment URL using wp_get_attachment_url()
