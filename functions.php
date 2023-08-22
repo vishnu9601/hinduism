@@ -61,3 +61,14 @@ else:
 
     // Output the attachment URL
     echo "Attachment URL: " . $attachment_url;
+
+
+    <?php
+
+    $post->ID='583';
+
+    $var_name= get_field('book_name', 583);
+    /* field name means which u gave custom field name*/
+    echo $var_name;
+
+    ?>
