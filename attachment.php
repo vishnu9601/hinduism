@@ -17,14 +17,33 @@ if($current_attachment_type['ext']==='pdf'){
     $content = '<div>' . get_the_content() . '</div>';
     $vishnu = '<div class="wrap" style="height: 100vh;display: flex;flex-direction: column;align-items: center;width: 100%;justify-content: center;"><h1>' . $book_name . '</h1>'. $book_details .$content . $download_button . '</div>';
     
+    
+
     echo $vishnu;
     comments_template();
     get_footer();
+    
 
     //Write Code for comment Box
+
+
+    
 }
+
 else {
     wp_redirect( home_url() );
     exit;
 
+   
+
 }
+
+
+?>
+
+<div class="container">
+<h1><?php the_title();?></h1>
+<?php $image = get_field('image');?>
+<img src="<?php echo $image;?>" alt="">
+</div>
+

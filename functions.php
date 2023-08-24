@@ -7,3 +7,5 @@ function hinduism_enqueue_style() {
     include_once get_stylesheet_directory() . '/acf-config.php';
 
     add_theme_support( 'post-thumbnails' );
+
+  
