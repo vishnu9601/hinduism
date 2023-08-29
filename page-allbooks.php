@@ -26,21 +26,8 @@ if ( $query->have_posts() ) {
         echo '</tr>';
     }
 }
+ get_footer(); 
   
-/*def get_attachment_link(49):
 
-attachments = {
-    1: "http://localhost/query/wp-content/uploads/2023/08/Treasure_Island_NT.pdf",
-    2: "http://localhost/query/wp-content/uploads/2023/08/To-The-Light-House.pdf",
-    3: "http://localhost/query/wp-content/uploads/2023/08/Little_Women_NT.pdf"
-}
-
-if postid in attachments:
-    return attachments[postid]
-else:
-    return False */
-
-
-    
 
     
